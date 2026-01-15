@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Truth</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="title">Truth</h1>
+      <p class="subtitle">Stage 2: capture page info.</p>
+      <button id="refreshButton" class="primary">Capture</button>
+      <p id="status" class="status">Waiting for capture...</p>
+
+      <section class="card">
+        <h2 class="label">Title</h2>
+        <p id="pageTitle" class="value">—</p>
+      </section>
+      <section class="card">
+        <h2 class="label">Description</h2>
+        <p id="pageDescription" class="value">—</p>
+      </section>
+      <section class="card">
+        <h2 class="label">Keywords</h2>
+        <p id="pageKeywords" class="value">—</p>
+      </section>
+      <section class="card">
+        <h2 class="label">Snippet</h2>
+        <p id="pageSnippet" class="value">—</p>
+      </section>
+
+      <section class="card">
+        <h2 class="label">Polymarket</h2>
+        <button id="searchButton" class="secondary">Search Markets</button>
+        <p id="marketStatus" class="status">Waiting for search...</p>
+        <div id="marketList" class="market-list"></div>
+      </section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
